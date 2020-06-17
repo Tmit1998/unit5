@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	
-	<style type="text/css" media="screen">
+	<style type="text/css" media="screen">	
 		input{
 			width: 100%;height: 40px;margin: 10px 0;padding: 10px;
 		}
@@ -19,12 +19,12 @@
 </head>
 <body>
     <div class="container">
-        <h2 align="center" class="text-uppercase font-weight-bold mb-4">ADD Author</h2>
+        <h2 align="center" class="text-uppercase font-weight-bold mb-4">ADD AUTHOR</h2>
 		
 		<div class="add-new">
-			<form action="?mod=category&act=store" method="post" accept-charset="utf-8">
+			<form action="?mod=author&act=store" method="post" accept-charset="utf-8">
 
-				<input type="text" name="title" placeholder="Nhập Tên">
+				<input type="text" name="ath_name" placeholder="Nhập Tên">
 
 				<input type="text" name="description" placeholder="Nhập nội dung">
 				

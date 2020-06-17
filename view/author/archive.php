@@ -13,23 +13,24 @@
 <body>
     <div class="container">
         <h2 align="center" class="text-uppercase font-weight-bold">Author</h2>
-        <a href="?mod=category&act=add" class="btn btn-primary mb-4">Add</a>
+        <a href="?mod=author&act=add" class="btn btn-primary mb-4">Add</a>
         <table class="table">
             <thead class="thead-dark">
               <tr>
                 <th scope="col" class="text-uppercase border border-white">Title</th>
+                <th scope="col" class="text-uppercase border border-white">Description</th>
                 <th scope="col" class="text-center text-uppercase border border-white">Action</th>
               </tr>
             </thead>
             <tbody>
             <?php foreach ($data as $row) {?>
               <tr>
-                <td class="border"><?= $row['title'] ?></td>
+                <td class="border"><?= $row['ath_name'] ?></td>
                 <td class="border text-center"><?= $row['description'] ?></td>
                 <td class="text-center border">
-                    <a href="?mod=category&act=single&id=<?=$row['id']?>" class="btn btn-primary ">Detail</a> 
-                     <a href="?mod=category&act=update&id=<?=$row['id']?>" class="btn btn-warning ">Update</a>  
-                    <a href="" class="btn btn-danger ">Delete</a>
+                    <a href="?mod=author&act=single&id=<?=$row['id']?>" class="btn btn-primary ">Detail</a> 
+                     <a href="?mod=author&act=update&id=<?=$row['id']?>" class="btn btn-warning ">Update</a>  
+                    <a href="?mod=author&act=update&id=<?=$row['id']?>" class="btn btn-danger ">Delete</a>
                 </td>
               </tr>
             <?php } ?>
