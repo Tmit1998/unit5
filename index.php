@@ -26,21 +26,34 @@
 					$controller_obj->delete();
 					break;
 				default:
-					echo "Không tồn tại action này";
+					echo "Không tồn tại trang này";
 					break;
 			}
 			break;
-		case 'post':
-			echo "Post <br>";
+		case 'author':
+			require_once('controller/authorController.php');
+			$controller_obj = new authorController();
 			switch ($act) {
-				case 'list':
-					echo "Xem danh sách bài viết";
+				case 'archive':
+					$controller_obj->archive();
+					break;
+				case 'single':
+					$controller_obj->single();
 					break;
 				case 'add':
-					echo "Thêm mới bài viết";
+					$controller_obj->add();
+					break;
+				case 'store':
+					$controller_obj->store();
+					break;
+				case 'update':
+					$controller_obj->update();
+					break;
+				case 'delete':
+					$controller_obj->delete();
 					break;
 				default:
-					echo "Không tồn tại action này";
+					echo "Không tồn tại trang này";
 					break;
 			}
 			break;
